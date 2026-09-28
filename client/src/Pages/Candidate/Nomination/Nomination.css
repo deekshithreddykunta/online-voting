@@ -1,0 +1,216 @@
+/* ===========================
+   Page
+=========================== */
+
+.nomination-page{
+    width:100%;
+    min-height:100vh;
+}
+
+.nomination-header{
+    margin-bottom:25px;
+}
+
+.nomination-header h1{
+    font-size:38px;
+    color:#1e293b;
+    margin-bottom:8px;
+}
+
+.nomination-header p{
+    color:#64748b;
+    font-size:17px;
+}
+
+/* ===========================
+   Progress
+=========================== */
+
+.progress{
+    width:100%;
+    height:10px;
+    background:#e2e8f0;
+    border-radius:20px;
+    overflow:hidden;
+    margin-bottom:35px;
+}
+
+.progress-fill{
+    height:100%;
+    background:#2563eb;
+    transition:.4s;
+}
+
+/* ===========================
+   Form
+=========================== */
+
+.nomination-form{
+
+    width:100%;
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+color:black;
+}
+
+/* ===========================
+   Grid
+=========================== */
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:22px;
+color:black;
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+color:black;
+}
+
+.form-group.full{
+
+    grid-column:1/-1;
+color:black;
+}
+
+.form-group label{
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+    color:#334155;
+
+}
+
+.form-group input,
+
+.form-group select,
+
+.form-group textarea{
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid #cbd5e1;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    transition:.3s;
+
+    background:#fff;
+
+}
+
+.form-group input:focus,
+
+.form-group select:focus,
+
+.form-group textarea:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.15);
+
+    outline:none;
+
+}
+
+textarea{
+
+    resize:none;
+
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.wizard-buttons{
+
+    margin-top:35px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+}
+
+.back-btn,
+
+.next-btn{
+
+    padding:14px 34px;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.back-btn{
+
+    background:#64748b;
+
+    color:#fff;
+
+}
+
+.back-btn:hover{
+
+    background:#475569;
+
+}
+
+.next-btn{
+
+    background:#2563eb;
+
+    color:#fff;
+
+}
+
+.next-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:900px){
+
+.form-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}

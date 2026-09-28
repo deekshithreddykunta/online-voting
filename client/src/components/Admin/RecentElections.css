@@ -1,0 +1,45 @@
+.recent-card{
+    background:#fff;
+    margin-top:30px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.recent-card h2{
+    margin-bottom:20px;
+    color:#1e293b;
+}
+
+.recent-card table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.recent-card th{
+    background:#2563eb;
+    color:white;
+    padding:14px;
+    text-align:left;
+}
+
+.recent-card td{
+    padding:14px;
+    border-bottom:1px solid #eee;
+    color:#334155;
+}
+
+.active{
+    color:#16a34a;
+    font-weight:bold;
+}
+
+.scheduled{
+    color:#f59e0b;
+    font-weight:bold;
+}
+
+.completed{
+    color:#dc2626;
+    font-weight:bold;
+}

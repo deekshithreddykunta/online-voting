@@ -1,0 +1,76 @@
+.officer-sidebar{
+
+    position:fixed;
+    left:0;
+    top:0;
+
+    width:260px;
+    height:100vh;
+
+    background:#1e3a8a;
+
+    color:#fff;
+
+    overflow-y:auto;
+
+}
+
+.officer-logo{
+
+    padding:25px;
+    text-align:center;
+    border-bottom:1px solid rgba(255,255,255,.2);
+
+}
+
+.officer-logo h2{
+
+    margin:0;
+    font-size:22px;
+    font-weight:700;
+
+}
+
+.officer-sidebar nav{
+
+    display:flex;
+    flex-direction:column;
+    margin-top:15px;
+
+}
+
+.officer-sidebar nav a{
+
+    color:#fff;
+    text-decoration:none;
+
+    display:flex;
+    align-items:center;
+
+    gap:12px;
+
+    padding:15px 22px;
+
+    transition:.3s;
+
+}
+
+.officer-sidebar nav a i{
+
+    width:22px;
+    text-align:center;
+
+}
+
+.officer-sidebar nav a:hover{
+
+    background:#2563eb;
+
+}
+
+.officer-sidebar nav a.active{
+
+    background:#2563eb;
+    border-left:5px solid #facc15;
+
+}

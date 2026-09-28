@@ -1,0 +1,91 @@
+.navbar{
+    width:100%;
+    height:80px;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 35px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    margin-bottom:30px;
+}
+
+.navbar-title h2{
+    margin:0;
+    color:#1e293b;
+    font-size:30px;
+}
+
+.datetime-widget{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.date-box,
+.time-box{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    background:#f8fafc;
+
+    padding:10px 18px;
+
+    border-radius:12px;
+
+    color:#334155;
+
+    font-weight:600;
+
+    box-shadow:0 3px 8px rgba(0,0,0,.05);
+}
+
+.date-box svg,
+.time-box svg{
+    color:#2563eb;
+    font-size:18px;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.profile-icon{
+    font-size:50px;
+    color:#2563eb;
+}
+
+.profile h4{
+    margin:0;
+    color:#1e293b;
+}
+
+.profile p{
+    margin:0;
+    color:#64748b;
+}
+.navbar .datetime-widget span{
+    color:#1e293b !important;
+}
+
+.navbar .date-box,
+.navbar .time-box{
+    color:#1e293b !important;
+    background:#f8fafc;
+}
+
+.navbar .date-box svg,
+.navbar .time-box svg{
+    color:#2563eb !important;
+}

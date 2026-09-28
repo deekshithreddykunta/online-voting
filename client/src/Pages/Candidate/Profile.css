@@ -1,0 +1,139 @@
+.candidate-profile{
+    width:100%;
+}
+
+.candidate-profile h1{
+    color:#1e293b;
+    margin-bottom:30px;
+}
+
+.profile-card{
+    width:700px;
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+/* Each field on a new line */
+.row{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    margin-bottom:20px;
+}
+
+.row label{
+    font-weight:600;
+    color:#334155;
+    margin-bottom:8px;
+}
+
+.row input{
+    width:100%;
+    padding:12px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+    background:#f8fafc;
+    font-size:16px;
+    box-sizing:border-box;
+}
+
+.button-group{
+    display:flex;
+    gap:15px;
+    margin-top:30px;
+}
+
+.edit-btn{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.password-btn{
+    background:#16a34a;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+}
+.candidate-profile{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.candidate-profile h1{
+    color:#1e293b;
+    margin-bottom:30px;
+    text-align:center;
+}
+
+.profile-card{
+    width:700px;
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.profile-details{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+}
+
+.row{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    margin-bottom:20px;
+}
+
+.row label{
+    font-weight:600;
+    color:#334155;
+    margin-bottom:8px;
+}
+
+.row input{
+    width:100%;
+    padding:12px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+    background:#f8fafc;
+    color:#1e293b;
+    font-size:16px;
+    box-sizing:border-box;
+}
+
+.button-group{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:30px;
+}
+
+.edit-btn{
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    padding:12px 28px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.password-btn{
+    background:#16a34a;
+    color:#fff;
+    border:none;
+    padding:12px 28px;
+    border-radius:8px;
+    cursor:pointer;
+}

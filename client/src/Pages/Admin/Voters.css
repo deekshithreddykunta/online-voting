@@ -1,0 +1,379 @@
+.voters-page{
+    padding:25px;
+    width:100%;
+    box-sizing:border-box;
+    background:#f4f7fb;
+    min-height:100vh;
+    color:#0f172a;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* ==========================
+   Header
+========================== */
+.voters-page .voters-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:16px;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+}
+
+.voters-page .voters-title{
+    font-size:28px;
+    font-weight:700;
+    margin:0;
+    color:#1e293b;
+}
+
+.voters-page .header-buttons{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+/* ==========================
+   Top Controls
+========================== */
+.voters-page .top-controls{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:15px;
+    margin:20px 0;
+    flex-wrap:wrap;
+}
+
+.voters-page .search-input{
+    flex:1;
+    min-width:250px;
+    padding:10px 14px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+    color:#0f172a;
+    font-size:14px;
+    background:#fff;
+    box-sizing:border-box;
+    outline:none;
+}
+
+.voters-page .search-input:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 0 3px rgba(37,99,235,.12);
+}
+
+.voters-page .filter-select{
+    width:180px;
+    padding:10px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+    color:#0f172a;
+    font-size:14px;
+    background:#fff;
+    box-sizing:border-box;
+    outline:none;
+}
+
+.voters-page .filter-select:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 0 3px rgba(37,99,235,.12);
+}
+
+/* ==========================
+   Main Buttons
+========================== */
+.voters-page .add-btn{
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.voters-page .add-btn:hover{
+    background:#1d4ed8;
+}
+
+.voters-page .export-btn{
+    background:#16a34a;
+    color:#fff;
+    border:none;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.voters-page .export-btn:hover{
+    background:#15803d;
+}
+
+/* ==========================
+   Table
+========================== */
+.voters-page .voters-table{
+    width:100%;
+    border-collapse:separate;
+    border-spacing:0;
+    background:#fff;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 8px 22px rgba(15,23,42,.08);
+    table-layout:auto;
+}
+
+.voters-page .voters-table thead{
+    background:#2563eb;
+}
+
+.voters-page .voters-table th{
+    color:#fff !important;
+    background:#2563eb !important;
+    padding:14px;
+    text-align:left;
+    font-weight:700;
+    font-size:14px;
+    border-bottom:none;
+    vertical-align:middle;
+}
+
+.voters-page .voters-table td{
+    padding:14px;
+    border-bottom:1px solid #eef2f7;
+    color:#334155;
+    vertical-align:middle;
+    background:#fff;
+    font-size:14px;
+}
+
+.voters-page .voters-table tbody tr:hover{
+    background:#f8fafc;
+}
+
+.voters-page .voters-table tbody tr:last-child td{
+    border-bottom:none;
+}
+
+.voters-page .no-data{
+    text-align:center;
+    padding:25px;
+    color:#64748b;
+    font-weight:600;
+    background:#fff;
+}
+
+/* Action column width */
+.voters-page .voters-table th:last-child,
+.voters-page .voters-table td:last-child{
+    width:320px;
+    min-width:320px;
+}
+
+/* ==========================
+   Action Buttons
+========================== */
+.voters-page .action-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    width:100%;
+}
+
+.voters-page .action-row{
+    display:flex;
+    gap:8px;
+    width:100%;
+}
+
+.voters-page .action-row button{
+    flex:1;
+    padding:8px 10px;
+    border:none;
+    border-radius:6px;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+    color:#fff;
+    transition:.25s ease;
+    white-space:nowrap;
+}
+
+.voters-page .action-row button:hover{
+    opacity:.92;
+}
+
+.voters-page .view-btn{
+    background:#06b6d4;
+}
+
+.voters-page .view-btn:hover{
+    background:#0891b2;
+}
+
+.voters-page .edit-btn{
+    background:#2563eb;
+}
+
+.voters-page .edit-btn:hover{
+    background:#1d4ed8;
+}
+
+.voters-page .status-btn{
+    background:#f59e0b;
+    color:#111827;
+}
+
+.voters-page .status-btn:hover{
+    background:#d97706;
+}
+
+.voters-page .reset-btn{
+    background:#8b5cf6;
+}
+
+.voters-page .reset-btn:hover{
+    background:#7c3aed;
+}
+
+.voters-page .delete-btn{
+    background:#ef4444;
+}
+
+.voters-page .delete-btn:hover{
+    background:#dc2626;
+}
+
+/* Also used in some layouts */
+.voters-page .cancel-btn{
+    background:#6b7280;
+    color:#fff;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.voters-page .cancel-btn:hover{
+    background:#4b5563;
+}
+
+.voters-page .delete-confirm-btn{
+    background:#ef4444;
+    color:#fff;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.voters-page .delete-confirm-btn:hover{
+    background:#dc2626;
+}
+
+/* ==========================
+   Pagination
+========================== */
+.voters-page .pagination{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    margin-top:20px;
+    color:#0f172a;
+    flex-wrap:wrap;
+}
+
+.voters-page .pagination button{
+    padding:8px 18px;
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    transition:.25s ease;
+}
+
+.voters-page .pagination button:hover:not(:disabled){
+    background:#1d4ed8;
+}
+
+.voters-page .pagination button:disabled{
+    background:#9ca3af;
+    cursor:not-allowed;
+}
+
+.voters-page .active-page{
+    background:#1d4ed8 !important;
+    color:#fff !important;
+}
+
+/* ==========================
+   Confirm Box
+========================== */
+.voters-page .confirm-box{
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    width:400px;
+    max-width:95%;
+    text-align:center;
+    box-shadow:0 20px 55px rgba(0,0,0,.22);
+}
+
+.voters-page .confirm-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:20px;
+    flex-wrap:wrap;
+}
+
+/* ==========================
+   Responsive
+========================== */
+@media (max-width: 900px){
+    .voters-page .voters-table th:last-child,
+    .voters-page .voters-table td:last-child{
+        width:280px;
+        min-width:280px;
+    }
+}
+
+@media (max-width: 640px){
+    .voters-page{
+        padding:16px;
+    }
+
+    .voters-page .voters-title{
+        font-size:24px;
+    }
+
+    .voters-page .search-input,
+    .voters-page .filter-select{
+        width:100%;
+        min-width:unset;
+    }
+
+    .voters-page .action-row{
+        flex-direction:column;
+    }
+
+    .voters-page .action-row button{
+        width:100%;
+    }
+
+    .voters-page .voters-table th:last-child,
+    .voters-page .voters-table td:last-child{
+        width:auto;
+        min-width:unset;
+    }
+
+    .voters-page .pagination{
+        gap:10px;
+    }
+}

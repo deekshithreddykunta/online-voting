@@ -1,0 +1,265 @@
+/* ===========================
+   Preview Page
+=========================== */
+
+.preview-page{
+
+    width:100%;
+    min-height:100vh;
+    background:#eef3fb;
+    padding:40px;
+
+}
+
+.preview-card{
+
+    max-width:1200px;
+    margin:auto;
+    background:#fff;
+    border-radius:18px;
+    padding:40px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.preview-header{
+
+    text-align:center;
+    border-bottom:2px solid #e2e8f0;
+    padding-bottom:20px;
+    margin-bottom:35px;
+
+}
+
+.preview-header h1{
+
+    font-size:36px;
+    color:#1e293b;
+    margin-bottom:10px;
+
+}
+
+.preview-header p{
+
+    color:#64748b;
+    font-size:17px;
+
+}
+
+/* ===========================
+   Sections
+=========================== */
+
+.preview-card section{
+
+    margin-bottom:35px;
+
+}
+
+.preview-card section h2{
+
+    color:#2563eb;
+    font-size:24px;
+    margin-bottom:18px;
+    padding-bottom:10px;
+    border-bottom:2px solid #dbeafe;
+
+}
+
+/* ===========================
+   Tables
+=========================== */
+
+.preview-card table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+.preview-card td{
+
+    border:1px solid #e2e8f0;
+    padding:14px 18px;
+    font-size:16px;
+
+}
+
+.preview-card td:first-child{
+
+    width:260px;
+    background:#f8fafc;
+    font-weight:700;
+    color:#334155;
+
+}
+
+.preview-card td:last-child{
+
+    color:#475569;
+
+}
+
+/* ===========================
+   Paragraph
+=========================== */
+
+.preview-card p{
+
+    color:#475569;
+    line-height:1.8;
+
+}
+
+/* ===========================
+   Documents
+=========================== */
+
+.preview-card ul{
+
+    list-style:none;
+    padding:0;
+
+}
+
+.preview-card li{
+
+    background:#f8fafc;
+    margin-bottom:12px;
+    padding:15px 18px;
+    border-radius:10px;
+    font-size:16px;
+
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.preview-buttons{
+
+    display:flex;
+    justify-content:space-between;
+    margin-top:40px;
+
+}
+
+.back-btn{
+
+    background:#64748b;
+    color:#fff;
+    border:none;
+    padding:14px 35px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.back-btn:hover{
+
+    background:#475569;
+
+}
+
+.submit-btn{
+
+    background:#16a34a;
+    color:#fff;
+    border:none;
+    padding:14px 35px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.submit-btn:hover{
+
+    background:#15803d;
+
+}
+
+.submit-btn:disabled{
+
+    background:#94a3b8;
+    cursor:not-allowed;
+
+}
+
+/* ===========================
+   Print
+=========================== */
+
+@media print{
+
+    .preview-buttons{
+
+        display:none;
+
+    }
+
+    .preview-card{
+
+        box-shadow:none;
+        border:none;
+
+    }
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:900px){
+
+    .preview-page{
+
+        padding:20px;
+
+    }
+
+    .preview-card{
+
+        padding:20px;
+
+    }
+
+    .preview-card td{
+
+        display:block;
+        width:100%;
+
+    }
+
+    .preview-card td:first-child{
+
+        background:#2563eb;
+        color:#fff;
+
+    }
+
+    .preview-buttons{
+
+        flex-direction:column;
+        gap:15px;
+
+    }
+
+    .back-btn,
+    .submit-btn{
+
+        width:100%;
+
+    }
+
+}

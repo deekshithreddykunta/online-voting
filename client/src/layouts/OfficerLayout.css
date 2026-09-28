@@ -1,0 +1,22 @@
+.officer-layout{
+
+    display:flex;
+    min-height:100vh;
+
+}
+
+.officer-main{
+
+    margin-left:260px;
+
+    width:calc(100% - 260px);
+
+    background:#eef3fb;
+
+    min-height:100vh;
+
+    padding:30px;
+
+    box-sizing:border-box;
+
+}

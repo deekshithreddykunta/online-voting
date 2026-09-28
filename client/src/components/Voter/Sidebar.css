@@ -1,0 +1,41 @@
+.voter-sidebar{
+    width:260px;
+    height:100vh;
+    background:#09182d;
+    color:white;
+    position:fixed;
+    left:0;
+    top:0;
+    display:flex;
+    flex-direction:column;
+}
+
+.logo{
+    font-size:38px;
+    font-weight:700;
+    color:#2f6df6;
+    padding:25px;
+}
+
+.voter-sidebar nav{
+    display:flex;
+    flex-direction:column;
+    margin-top:20px;
+}
+
+.voter-sidebar nav a{
+    color:white;
+    text-decoration:none;
+    padding:16px 30px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    font-size:18px;
+}
+
+.voter-sidebar nav a.active{
+    background:#2f6df6;
+    border-radius:10px;
+    margin:0 15px;
+}
+

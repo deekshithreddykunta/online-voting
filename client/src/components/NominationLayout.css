@@ -1,0 +1,389 @@
+/* ===========================================
+   Page
+=========================================== */
+
+.nomination-layout{
+    width:100%;
+    min-height:100vh;
+    padding:15px;
+}
+
+.nomination-header{
+    margin-bottom:30px;
+}
+
+.nomination-header h1{
+    font-size:40px;
+    color:#1e293b;
+    margin-bottom:10px;
+    font-weight:700;
+}
+
+.nomination-header p{
+    font-size:18px;
+    color:#64748b;
+}
+
+/* ===========================================
+   Progress
+=========================================== */
+
+.progress{
+    width:100%;
+    height:10px;
+    background:#dbeafe;
+    border-radius:30px;
+    overflow:hidden;
+    margin-bottom:35px;
+}
+
+.progress-fill{
+    height:100%;
+    background:linear-gradient(90deg,#2563eb,#3b82f6);
+    transition:.4s;
+}
+
+/* ===========================================
+   Stepper
+=========================================== */
+
+.stepper{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.step{
+    flex:1;
+    text-align:center;
+    position:relative;
+}
+
+.step::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:18px;
+
+    left:58%;
+
+    width:100%;
+
+    height:3px;
+
+    background:#cbd5e1;
+
+    z-index:0;
+
+}
+
+.step:last-child::after{
+    display:none;
+}
+
+.circle{
+
+    width:38px;
+
+    height:38px;
+
+    border-radius:50%;
+
+    background:#cbd5e1;
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:auto;
+
+    font-weight:700;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.step span{
+
+    display:block;
+
+    margin-top:10px;
+
+    font-size:14px;
+
+    color:#64748b;
+
+}
+
+.step.active .circle{
+
+    background:#2563eb;
+
+}
+
+.step.active span{
+
+    color:#2563eb;
+
+    font-weight:600;
+
+}
+
+.step.completed .circle{
+
+    background:#22c55e;
+
+}
+
+.step.completed::after{
+
+    background:#22c55e;
+
+}
+
+/* ===========================================
+   Card
+=========================================== */
+
+.wizard-card{
+
+    width:100%;
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:40px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+.wizard-card h2{
+
+    margin-bottom:30px;
+
+    color:#1e293b;
+
+    font-size:30px;
+
+}
+
+/* ===========================================
+   Grid
+=========================================== */
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:22px;
+
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.form-group.full{
+
+    grid-column:1/-1;
+
+}
+
+.form-group label{
+
+    font-size:15px;
+
+    color:#334155;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+}
+
+/* ===========================================
+   Inputs
+=========================================== */
+
+.form-group input,
+
+.form-group select,
+
+.form-group textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    border:1px solid #cbd5e1;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    transition:.3s;
+
+    background:#fff;
+
+}
+
+.form-group textarea{
+
+    resize:none;
+
+}
+
+.form-group input:focus,
+
+.form-group select:focus,
+
+.form-group textarea:focus{
+
+    outline:none;
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.15);
+
+}
+
+/* ===========================================
+   Buttons
+=========================================== */
+
+.wizard-buttons{
+
+    margin-top:35px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+}
+
+.back-btn,
+
+.next-btn{
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:14px 34px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.back-btn{
+
+    background:#64748b;
+
+    color:white;
+
+}
+
+.back-btn:hover{
+
+    background:#475569;
+
+}
+
+.next-btn{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.next-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* ===========================================
+   Responsive
+=========================================== */
+
+@media(max-width:1100px){
+
+.form-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.stepper{
+
+overflow-x:auto;
+
+padding-bottom:10px;
+
+}
+
+.step{
+
+min-width:120px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.wizard-card{
+
+padding:25px;
+
+}
+
+.nomination-header h1{
+
+font-size:30px;
+
+}
+
+.wizard-buttons{
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+.back-btn,
+
+.next-btn{
+
+width:100%;
+
+}
+
+}

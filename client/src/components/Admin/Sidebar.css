@@ -1,0 +1,133 @@
+.sidebar{
+
+    width:260px;
+    height:100vh;
+
+    background:#0d1b2a;
+
+    position:fixed;
+    left:0;
+    top:0;
+
+    display:flex;
+    flex-direction:column;
+
+    color:white;
+}
+
+.logo{
+
+    text-align:center;
+    padding:25px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.logo h2{
+
+    color:#3b82f6;
+    margin:0;
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+    padding:20px 0;
+    margin:0;
+
+    flex:1;
+}
+
+.sidebar li{
+
+    margin:8px 15px;
+}
+
+.sidebar a{
+
+    display:flex;
+    align-items:center;
+
+    gap:15px;
+
+    padding:14px 18px;
+
+    color:white;
+    text-decoration:none;
+
+    border-radius:10px;
+
+    transition:.3s;
+}
+
+.sidebar a:hover{
+
+    background:#1b263b;
+}
+
+.sidebar a.active{
+
+    background:#2563eb;
+}
+
+.logout{
+
+    padding:15px;
+
+    border-top:1px solid rgba(255,255,255,.1);
+}
+
+.logout a{
+
+    background:#ef4444;
+}
+
+.logout a:hover{
+
+    background:#dc2626;
+}
+.sidebar{
+    width:280px;
+    height:100vh;
+    background:#071426;
+    display:flex;
+    flex-direction:column;
+}
+
+.sidebar-menu{
+    flex:1;
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.sidebar-menu li{
+    list-style:none;
+}
+
+.sidebar-logout{
+    padding:20px;
+    border-top:1px solid rgba(255,255,255,.1);
+}
+
+.logout-btn{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    gap:12px;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    background:#dc2626;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.logout-btn:hover{
+    background:#b91c1c;
+}

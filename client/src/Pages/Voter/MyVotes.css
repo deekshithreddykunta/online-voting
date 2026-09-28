@@ -1,0 +1,53 @@
+.myvotes-page{
+    padding:30px;
+}
+
+.myvotes-page h1{
+    margin-bottom:25px;
+    color:#2563eb;
+}
+
+.empty-box{
+    color:#100f0f;
+    background:#faf6f6;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    font-size:18px;
+}
+
+.votes-table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+    color:#100f0f;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.votes-table thead{
+    background:#2563eb;
+    color:#100f0f;
+}
+
+.votes-table th,
+.votes-table td{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #eee;
+}
+
+.votes-table tbody tr:hover{
+    background:#f5f9ff;
+}
+
+.status-badge{
+    background:#16a34a;
+    color:white;
+    padding:6px 15px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:600;
+}

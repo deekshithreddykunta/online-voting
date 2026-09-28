@@ -1,0 +1,96 @@
+.candidate-sidebar{
+
+    position:fixed;
+    left:0;
+    top:0;
+
+    width:260px;
+    height:100vh;
+
+    background:#09182d;
+    color:#fff;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+}
+
+.sidebar-top{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+.logo{
+
+    font-size:34px;
+    font-weight:700;
+
+    color:#2f6df6;
+
+    padding:25px;
+
+}
+
+.candidate-sidebar nav{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.candidate-sidebar nav a{
+
+    color:#fff;
+
+    text-decoration:none;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:15px 25px;
+
+    font-size:17px;
+    
+
+}
+
+.candidate-sidebar nav a:hover,
+.candidate-sidebar nav a.active{
+
+    background:#2563eb;
+
+}
+
+.logout-btn{
+
+    margin:0px;
+
+    padding:20px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#ef4444;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+}

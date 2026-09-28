@@ -1,0 +1,23 @@
+.admin-layout{
+    display: flex;
+    min-height: 100vh;
+    background: #f4f7fb;
+}
+
+.main-content{
+    margin-left: 260px;
+    width: calc(100% - 260px);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.page-content{
+    flex: 1;
+    margin-top: 20px;
+    background: #f4f7fb;
+    padding: 20px;
+    border-radius: 15px;
+}

@@ -1,0 +1,170 @@
+/* ===========================
+   Page
+=========================== */
+
+.candidate-elections{
+    width:100%;
+}
+
+.page-header{
+    margin-bottom:35px;
+}
+
+.page-header h1{
+    font-size:38px;
+    color:#1e293b;
+    margin-bottom:10px;
+}
+
+.page-header p{
+    color:#64748b;
+    font-size:17px;
+}
+
+/* ===========================
+   Loading
+=========================== */
+
+.loading{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:60vh;
+    font-size:22px;
+    color:#2563eb;
+}
+
+/* ===========================
+   Grid
+=========================== */
+
+.election-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
+    gap:30px;
+}
+
+/* ===========================
+   Card
+=========================== */
+
+.election-card{
+    background:#fff;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    display:flex;
+    flex-direction:column;
+}
+
+.election-card h2{
+    margin:0 0 15px;
+    font-size:28px;
+    color:#1e293b;
+}
+
+.description{
+    margin-bottom:25px;
+    color:#64748b;
+    line-height:1.8;
+}
+
+/* ===========================
+   Details
+=========================== */
+
+.details{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.detail-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:14px 0;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.detail-row:last-child{
+    border-bottom:none;
+}
+
+.label{
+    font-weight:600;
+    color:#475569;
+}
+
+.detail-row span:last-child{
+    font-weight:500;
+    color:#1e293b;
+}
+
+.status{
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.status.active{
+    background:#dcfce7;
+    color:#15803d;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.apply-btn,
+.applied-btn{
+
+    width:100%;
+    margin-top:30px;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:600;
+}
+
+.apply-btn{
+    background:#2563eb;
+    color:#fff;
+    cursor:pointer;
+}
+
+.apply-btn:hover{
+    background:#1d4ed8;
+}
+
+.applied-btn{
+    background:#16a34a;
+    color:#fff;
+    cursor:not-allowed;
+}
+
+/* ===========================
+   No Election
+=========================== */
+
+.no-election{
+    background:#fff;
+    padding:60px;
+    text-align:center;
+    border-radius:18px;
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media(max-width:768px){
+
+    .election-grid{
+        grid-template-columns:1fr;
+    }
+
+}
