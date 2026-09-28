@@ -313,7 +313,6 @@ res.json({
 
 };
 exports.resetPassword = async (req, res) => {
-
     try {
 
         const { email, password } = req.body;
@@ -321,27 +320,34 @@ exports.resetPassword = async (req, res) => {
         const otpRecord = await otpModel.getOTP(email);
 
         if (!otpRecord) {
-
             return res.status(400).json({
                 success: false,
                 message: "OTP verification required"
             });
-
         }
 
         if (!otpRecord.is_verified) {
-
             return res.status(400).json({
                 success: false,
                 message: "Please verify your OTP first"
             });
+        }
 
+        // Find user by email
+        const user = await userModel.findUserByEmail(email);
+
+        if (!user) {
+            return res.status(404).json({
+                success: false,
+                message: "User not found"
+            });
         }
 
         const hashedPassword = await bcrypt.hash(password, 10);
 
+        // Update using user_id
         await userModel.updatePassword(
-            email,
+            user.user_id,
             hashedPassword
         );
 
@@ -362,5 +368,4 @@ exports.resetPassword = async (req, res) => {
         });
 
     }
-
 };
