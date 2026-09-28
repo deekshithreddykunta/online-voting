@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:5000/api/auth";
+const API = "https://online-voting-qss7.onrender.com/api/auth";
 
 // ===============================
 // AUTH
@@ -34,13 +34,13 @@ const authHeader = () => ({
 // ===============================
 export const getProfile = () =>
     axios.get(
-        "http://localhost:5000/api/profile",
+        "https://online-voting-qss7.onrender.com/api/profile",
         authHeader()
     );
 
 export const updateProfile = (data) =>
     axios.put(
-        "http://localhost:5000/api/profile",
+        "https://online-voting-qss7.onrender.com/api/profile",
         data,
         authHeader()
     );
@@ -50,7 +50,7 @@ export const updateProfile = (data) =>
 // ===============================
 export const changePassword = (data) =>
     axios.put(
-        "http://localhost:5000/api/change-password",
+        "https://online-voting-qss7.onrender.com/api/change-password",
         data,
         authHeader()
     );

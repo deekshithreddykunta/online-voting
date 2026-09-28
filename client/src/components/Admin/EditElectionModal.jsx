@@ -35,7 +35,7 @@ export default function EditElectionModal({
             const token = localStorage.getItem("token");
 
             const res = await axios.put(
-                `http://localhost:5000/api/admin/elections/${election.election_id}`,
+                `https://online-voting-qss7.onrender.com/api/admin/elections/${election.election_id}`,
                 form,
                 {
                     headers: {

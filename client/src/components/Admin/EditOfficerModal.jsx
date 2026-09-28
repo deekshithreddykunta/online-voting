@@ -35,7 +35,7 @@ export default function EditOfficerModal({
             const token = localStorage.getItem("token");
 
             const res = await axios.put(
-                `http://localhost:5000/api/admin/officers/${officer.user_id}`,
+                `https://online-voting-qss7.onrender.com/api/admin/officers/${officer.user_id}`,
                 {
                     full_name: fullName,
                     username,

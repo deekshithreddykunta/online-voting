@@ -39,7 +39,7 @@ export default function EditPositionModal({
             const token = localStorage.getItem("token");
 
             const res = await axios.get(
-                "http://localhost:5000/api/admin/elections",
+                "https://online-voting-qss7.onrender.com/api/admin/elections",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -69,7 +69,7 @@ export default function EditPositionModal({
             const token = localStorage.getItem("token");
 
             const res = await axios.put(
-                `http://localhost:5000/api/admin/positions/${position.position_id}`,
+                `https://online-voting-qss7.onrender.com/api/admin/positions/${position.position_id}`,
                 form,
                 {
                     headers: {

@@ -58,7 +58,7 @@ const fetchWinners = async () => {
         const token = localStorage.getItem("token");
 
         const res = await fetch(
-            "http://localhost:5000/api/admin/results/winners",
+            "https://online-voting-qss7.onrender.com/api/admin/results/winners",
             {
                 headers: {
                     Authorization: `Bearer ${token}`

@@ -200,7 +200,7 @@ setShowReceipt(true);
                             src={
                                 candidate.photo
                                 ?
-                                `http://localhost:5000/uploads/${candidate.photo}`
+                                `https://online-voting-qss7.onrender.com/uploads/${candidate.photo}`
                                 :
                                 "/default-user.png"
                             }
@@ -230,7 +230,7 @@ setShowReceipt(true);
 
                                 <img
 
-                                    src={`http://localhost:5000/uploads/${candidate.symbol}`}
+                                    src={`https://online-voting-qss7.onrender.com/uploads/${candidate.symbol}`}
 
                                     className="party-symbol"
 

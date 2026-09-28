@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5000/api/admin/results";
+const BASE_URL = "https://online-voting-qss7.onrender.com/api/admin/results";
 
 const token = () => ({
     headers: {

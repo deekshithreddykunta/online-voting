@@ -44,7 +44,7 @@ const [deleteId, setDeleteId] = useState(null);
             const token = localStorage.getItem("token");
 
             const res = await axios.get(
-                "http://localhost:5000/api/admin/candidates",
+                "https://online-voting-qss7.onrender.com/api/admin/candidates",
                 {
                     headers:{
                         Authorization:`Bearer ${token}`
@@ -76,7 +76,7 @@ const [deleteId, setDeleteId] = useState(null);
 
             await axios.patch(
 
-                `http://localhost:5000/api/admin/candidates/${id}/status`,
+                `https://online-voting-qss7.onrender.com/api/admin/candidates/${id}/status`,
 
                 {},
 
@@ -147,7 +147,7 @@ const confirmDelete = async () => {
         const token = localStorage.getItem("token");
 
         const res = await axios.delete(
-            `http://localhost:5000/api/admin/candidates/${deleteId}`,
+            `https://online-voting-qss7.onrender.com/api/admin/candidates/${deleteId}`,
             {
                 headers: {
                     Authorization: `Bearer ${token}`

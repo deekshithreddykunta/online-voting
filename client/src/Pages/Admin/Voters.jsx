@@ -33,7 +33,7 @@ const [selectedResetVoter, setSelectedResetVoter] = useState(null);
             const token = localStorage.getItem("token");
 
             const res = await axios.get(
-                "http://localhost:5000/api/admin/voters",
+                "https://online-voting-qss7.onrender.com/api/admin/voters",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -59,7 +59,7 @@ const [selectedResetVoter, setSelectedResetVoter] = useState(null);
         const token = localStorage.getItem("token");
 
         const res = await axios.delete(
-            `http://localhost:5000/api/admin/voters/${deleteId}`,
+            `https://online-voting-qss7.onrender.com/api/admin/voters/${deleteId}`,
             {
                 headers: {
                     Authorization: `Bearer ${token}`
@@ -119,7 +119,7 @@ const toggleStatus = async (id) => {
         const token = localStorage.getItem("token");
 
         const res = await axios.patch(
-            `http://localhost:5000/api/admin/voters/${id}/status`,
+            `https://online-voting-qss7.onrender.com/api/admin/voters/${id}/status`,
             {},
             {
                 headers: {
@@ -149,7 +149,7 @@ const exportCSV = async () => {
         const token = localStorage.getItem("token");
 
         const response = await axios.get(
-            "http://localhost:5000/api/admin/voters/export/csv",
+            "https://online-voting-qss7.onrender.com/api/admin/voters/export/csv",
             {
                 headers: {
                     Authorization: `Bearer ${token}`

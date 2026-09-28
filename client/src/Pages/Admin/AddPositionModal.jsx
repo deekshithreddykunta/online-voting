@@ -24,7 +24,7 @@ export default function AddPositionModal({ onClose, refreshPositions }) {
             const token = localStorage.getItem("token");
 
             const res = await axios.get(
-                "http://localhost:5000/api/admin/elections",
+                "https://online-voting-qss7.onrender.com/api/admin/elections",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -54,7 +54,7 @@ export default function AddPositionModal({ onClose, refreshPositions }) {
             const token = localStorage.getItem("token");
 
             const res = await axios.post(
-                "http://localhost:5000/api/admin/positions",
+                "https://online-voting-qss7.onrender.com/api/admin/positions",
                 form,
                 {
                     headers: {

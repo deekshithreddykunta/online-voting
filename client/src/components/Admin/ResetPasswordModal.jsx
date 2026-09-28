@@ -26,7 +26,7 @@ export default function ResetPasswordModal({
             const token = localStorage.getItem("token");
 
             const res = await axios.put(
-                `http://localhost:5000/api/admin/voters/${voter.user_id}/reset-password`,
+                `https://online-voting-qss7.onrender.com/api/admin/voters/${voter.user_id}/reset-password`,
                 { password },
                 {
                     headers: {

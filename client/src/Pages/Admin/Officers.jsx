@@ -30,7 +30,7 @@ export default function Officer() {
             const token = localStorage.getItem("token");
 
             const res = await axios.get(
-                "http://localhost:5000/api/admin/officers",
+                "https://online-voting-qss7.onrender.com/api/admin/officers",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,
@@ -52,7 +52,7 @@ export default function Officer() {
             const token = localStorage.getItem("token");
 
             const res = await axios.delete(
-                `http://localhost:5000/api/admin/officers/${deleteId}`,
+                `https://online-voting-qss7.onrender.com/api/admin/officers/${deleteId}`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,
@@ -81,7 +81,7 @@ export default function Officer() {
             const officer = officers.find((o) => o.user_id === id);
 
             await axios.patch(
-                `http://localhost:5000/api/admin/officers/${id}/status`,
+                `https://online-voting-qss7.onrender.com/api/admin/officers/${id}/status`,
                 {},
                 {
                     headers: {

@@ -31,7 +31,7 @@ export default function AddOfficerModal({ close, refresh }) {
             const token = localStorage.getItem("token");
 
             await axios.post(
-                "http://localhost:5000/api/admin/officers",
+                "https://online-voting-qss7.onrender.com/api/admin/officers",
                 form,
                 {
                     headers: {

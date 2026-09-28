@@ -42,7 +42,7 @@ export default function Position() {
             const token = localStorage.getItem("token");
 
             const res = await axios.get(
-                "http://localhost:5000/api/admin/positions",
+                "https://online-voting-qss7.onrender.com/api/admin/positions",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -70,7 +70,7 @@ const deletePosition = async () => {
 
         const res = await axios.delete(
 
-            `http://localhost:5000/api/admin/positions/${deleteId}`,
+            `https://online-voting-qss7.onrender.com/api/admin/positions/${deleteId}`,
 
             {
                 headers: {

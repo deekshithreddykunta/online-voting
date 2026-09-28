@@ -28,10 +28,10 @@ export default function AddCandidateModal({
             const token = localStorage.getItem("token");
 
             const [electionRes, positionRes] = await Promise.all([
-                axios.get("http://localhost:5000/api/admin/elections", {
+                axios.get("https://online-voting-qss7.onrender.com/api/admin/elections", {
                     headers: { Authorization: `Bearer ${token}` }
                 }),
-                axios.get("http://localhost:5000/api/admin/positions", {
+                axios.get("https://online-voting-qss7.onrender.com/api/admin/positions", {
                     headers: { Authorization: `Bearer ${token}` }
                 })
             ]);
@@ -60,7 +60,7 @@ export default function AddCandidateModal({
             const token = localStorage.getItem("token");
 
             const res = await axios.post(
-                "http://localhost:5000/api/admin/candidates",
+                "https://online-voting-qss7.onrender.com/api/admin/candidates",
                 form,
                 {
                     headers: {

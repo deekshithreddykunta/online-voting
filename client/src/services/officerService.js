@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:5000/api/officer";
+const API = "https://online-voting-qss7.onrender.com/api/officer";
 
 const authHeader = () => ({
     headers: {

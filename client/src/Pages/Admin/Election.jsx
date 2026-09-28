@@ -53,7 +53,7 @@ const loadElections = async () => {
         console.log("Token:", token);
 
         const res = await axios.get(
-            "http://localhost:5000/api/admin/elections",
+            "https://online-voting-qss7.onrender.com/api/admin/elections",
             {
                 headers: {
                     Authorization: `Bearer ${token}`
@@ -101,7 +101,7 @@ const confirmDelete = async () => {
 
         const res = await axios.delete(
 
-            `http://localhost:5000/api/admin/elections/${deleteId}`,
+            `https://online-voting-qss7.onrender.com/api/admin/elections/${deleteId}`,
 
             {
                 headers: {

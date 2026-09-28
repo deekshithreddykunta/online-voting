@@ -31,7 +31,7 @@ export default function AddElectionModal({ onClose, refreshElections }) {
             const token = localStorage.getItem("token");
 
             const res = await axios.post(
-                "http://localhost:5000/api/admin/elections",
+                "https://online-voting-qss7.onrender.com/api/admin/elections",
                 form,
                 {
                     headers: {

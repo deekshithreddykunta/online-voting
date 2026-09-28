@@ -33,7 +33,7 @@ if (show === false) return null;
             const token = localStorage.getItem("token");
 
             await axios.post(
-                "http://localhost:5000/api/admin/voters",
+                "https://online-voting-qss7.onrender.com/api/admin/voters",
                 form,
                 {
                     headers: {
