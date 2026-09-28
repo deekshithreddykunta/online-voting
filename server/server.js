@@ -26,7 +26,9 @@ const app = express();
 // =========================
 
 app.use(cors({
-    origin: "https://online-voting-qss7.onrender.com",
+    origin: [
+        "https://onlinevoting-7yge.onrender.com",
+    ],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     allowedHeaders: ["Content-Type", "Authorization"]
