@@ -1,38 +1,40 @@
-const nodemailer = require("nodemailer");
-console.log("EMAIL_USER:", process.env.EMAIL_USER);
-console.log("EMAIL_PASS exists:", !!process.env.EMAIL_PASS);
-console.log("EMAIL_PASS length:", process.env.EMAIL_PASS?.length);
-const transporter = nodemailer.createTransport({
-    host: "smtp-relay.brevo.com",
-    port: 587,
-    secure: false,
-    auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
-    },
-});
-transporter.verify((error, success) => {
-    if (error) {
-        console.error("SMTP Verify:", error);
-    } else {
-        console.log("SMTP Ready");
-    }
-});
+const SibApiV3Sdk = require("sib-api-v3-sdk");
+
+const defaultClient = SibApiV3Sdk.ApiClient.instance;
+
+const apiKey = defaultClient.authentications["api-key"];
+apiKey.apiKey = process.env.BREVO_API_KEY;
+
+const apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
 
 const sendOTP = async (email, otp) => {
-    await transporter.sendMail({
-        from: process.env.EMAIL_USER,
-        to: email,
-        subject: "SecureVote Password Reset OTP",
-        html: `
-            <div style="font-family:Arial;padding:20px">
-                <h2>SecureVote</h2>
-                <p>Your OTP is:</p>
-                <h1>${otp}</h1>
-                <p>This OTP is valid for 5 minutes.</p>
-            </div>
-        `,
-    });
+    try {
+        await apiInstance.sendTransacEmail({
+            sender: {
+                email: process.env.EMAIL_USER,
+                name: "SecureVote",
+            },
+            to: [
+                {
+                    email: email,
+                },
+            ],
+            subject: "SecureVote Password Reset OTP",
+            htmlContent: `
+                <div style="font-family:Arial;padding:20px">
+                    <h2>SecureVote</h2>
+                    <p>Your OTP is:</p>
+                    <h1 style="color:#2563eb">${otp}</h1>
+                    <p>This OTP is valid for 5 minutes.</p>
+                </div>
+            `,
+        });
+
+        console.log("✅ OTP email sent");
+    } catch (err) {
+        console.error("Brevo Error:", err.response?.body || err);
+        throw err;
+    }
 };
 
 module.exports = { sendOTP };
